@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let isActive = false;
 
-  const OPENAI_API_KEY = "YOUR_OPENAI_API_KEY"; // Hier deinen OpenAI API-Key eintragen
+  const OPENAI_API_KEY = ""; // Hier deinen OpenAI API-Key eintragen
 
   micBtn.addEventListener("click", () => {
     if (!OPENAI_API_KEY || !OPENAI_API_KEY.startsWith("sk-")) {
