@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #000000;
+  color: #333;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: url('/img/illustration.webp') no-repeat center 30%;
+  background-size: cover;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+header {
+  background: #1e1e1e;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  text-align: center;
+  background: #ffffff;
+  padding: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+p {
+  font-size: 1.25rem;
+  color: #555;
+}
+
+.mic-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #ff4c60;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 76, 96, 0.5);
+}
+
+.mic-button:hover {
+  background: #e64053;
+}
